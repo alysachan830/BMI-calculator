@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css */
+
+body{
+    font-family: "微軟正黑體","Microsoft JhengHei",Arial,sans-serif;
+}
+
+.top{
+    background-color: #424242;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputData{
+    margin: 0 150px;
+}
+
+
+.inputData label{
+    color: #FFD366;
+    margin-bottom: 10px;
+}
+
+#height, #weight{
+    display: block;
+    padding: 5px;
+    border: 2px #FFD366 solid ;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255,0.4);
+    color: #fff;
+    margin: 10px 0 20px 0;
+}
+
+::placeholder{
+    color: silver;
+}
+
+.reminder{
+    color: #ff4d4d;
+    display: none;
+}
+
+.send{
+    background: #FFD366;
+    height: 100px;
+    width: 100px;
+    border-style: none;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #424242;
+    cursor: pointer;
+    transition-property: border-style,color,background,box-shadow;
+    transition-duration: .7s;
+}
+
+.blueCircle{
+    background: none;
+    color: #31BAF9;
+    border: 5px solid #31BAF9;
+    position: relative;
+}
+
+.greenCircle{
+    background: none;
+    color: #86D73F;
+    border: 5px solid #86D73F;
+    position: relative;
+}
+
+.yellowCircle{
+    background: none;
+    color: #FFD366;
+    border: 5px solid #FFD366;
+    position: relative;
+}
+
+.pinkCircle{
+    background: none;
+    color: hotpink;
+    border: 5px solid hotpink;
+    position: relative;
+}
+
+.redCircle{
+    background: none;
+    color: red;
+    border: 5px solid red;
+    position: relative;
+}
+
+.brownCircle{
+    background: none;
+    color: brown;
+    border: 5px solid brown;
+    position: relative;
+}
+
+.clear{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('images/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+}
+
+/* refresh icon color */
+
+.blueClear{
+    background-color: #31BAF9;
+}
+
+.greenClear{
+    background-color: #86D73F;
+}
+
+.yellowClear{
+    background-color: #FFD366;
+}
+
+.pinkClear{
+    background-color: hotpink;
+}
+
+.redClear{
+    background-color: red;
+}
+
+.brownClear{
+    background-color: brown;
+}
+
+
+.btnResult{
+    font-size: 22px;
+}
+
+.btnBMI{
+    font-size: 12px;
+}
+
+
+.send:hover{
+    box-shadow: 0px 0px 10px #ffdc82;
+}
+
+.send:active{
+    background: #DEA821;
+}
+
+.content{
+    background: #e2e2e2;
+    padding: 40px 0;
+}
+
+.content-wrap{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content-top{
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contentTitle{
+    font-size: 20px;
+}
+
+.clearAllBMI{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0,-25%);
+    cursor: pointer;
+    background: #FFD366;
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.clearAllBMI:hover{
+    background: #DEA821;
+}
+
+.instruction{
+    text-align: center;
+}
+
+.list h2{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.result{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    border-left: 7px solid #86D73F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4A4A4A;
+}
+
+/* list color */
+
+.blueList{
+    border-left: 7px solid #31BAF9;
+}
+
+.greenList{
+    border-left: 7px solid #86D73F;
+}
+
+.yellowList{
+    border-left: 7px solid #FFD366;
+}
+
+.pinkList{
+    border-left: 7px solid hotpink;
+}
+
+.redList{
+    border-left: 7px solid red;
+}
+
+.brownList{
+    border-left: 7px solid brown;
+}
+
+.resultTitle,.resultBMI,.resultWeight,.resultHeight,.resultLabel{
+    flex-basis: 120px;
+}
+
+.resultTitle,.resultNum{
+    font-size: 20px;
+}
+
+.resultLabel{
+    font-size: 12px;
+}
+
+.resultNum{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.cancel{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.cancel::before,.cancel::after{
+    display: block;
+    content:'';
+    height: 20px;
+    width: 2px;
+    background: silver;
+    right: 9px;
+    position: absolute;
+
+}
+
+.cancel::before{
+    transform: rotate(45deg);
+}
+
+.cancel::after{
+    transform: rotate(-45deg);
+}
+
+.cancel:hover{
+    background: rgb(233, 233, 233);
+}
+
+footer{
+    background: #FFD366;
+    text-align: center;
+    padding: 16px 0;
+}
